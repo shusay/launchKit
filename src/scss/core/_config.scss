@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+$imgPath          : "shared/images/";
+
+
+/* ================================================= *
+    Normalize
+** ================================================= */
+
+@import '//normalize-css.googlecode.com/svn/trunk/normalize.css';
+
+
+/* ================================================= *
+    Font
+** ================================================= */
+
+@import 'inc/webfonts';
+
+$fonts: "Open Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+
+// --- sizes --- // Note. Inspired from cloth sizing.
+$xl3              : 48px;
+$xl2              : 40px;
+$xl               : 32px;
+$l                : 26px;
+$m                : 20px;
+$s                : 15px;
+$xs               : 12px;
+
+// --- Mobile Font Size -- //
+$xl2-m            : 40px;
+$xl-m             : 32px;
+$l-m              : 24px;
+$m-m              : 18px;
+$s-m              : 15px;
+$xs-m             : 12px;
+
+
+/* ================================================= *
+   Colors
+** ================================================= */
+
+// --- Blue --- //
+$bl12             : #24a6c7;
+$bl10             : #27b7db; // Primary
+$bl8              : #49c4e3;
+$bl6              : #6fd4ed;
+$bl4              : #8cdaed;
+$bl2              : #b3e8f5;
+
+// --- Black --- //
+$b12              : #071013; // Headline
+$b10              : #101b1f;
+$b8               : #313638;
+$b6               : #5a6569; // Normal text
+$b4               : #778285;
+$b2               : #9ca4a6; // Caption
+
+// --- White --- //
+$w12              : #b6baba;
+$w10              : #c8cccc;
+$w8               : #dce0e0; // Border
+$w6               : #edf0f0;
+$w4               : #fafcfc; // Sub background
+$w2               : #ffffff; // Primary background
+
+
+// --- Secondary Colors --- //
+$blue             : #4ba3c3;
+
+
+// --- Status Colors --- //
+$success          : #3BB273;
+$error            : #c81d25;
+$warning          : #ffba49;
+
+
+// --- Modal Background --- //
+$mdlbg            : rgba(0,0,0,.65); // Note: Modal background color
+
+
+/* ================================================= *
+   Margin, Spacing Note. Inspired from cup sizing
+** ================================================= */
+
+$a                : 8px;
+$b                : 12px;
+$c                : 16px;
+$d                : 20px;
+$e                : 24px;
+$f                : 32px;
+$g                : 40px;
+$h                : 48px;
+$i                : 56px;

@@ -1,6 +1,6 @@
 # Web project launcher
 ## Requires
-- node.js 0.12.0~
+- node.js >=0.12.0
 - npm
 - bower
 

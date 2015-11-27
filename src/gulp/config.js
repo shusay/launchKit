@@ -24,6 +24,7 @@ module.exports = {
     'srcDir'       : 'src/',
     'srcImg'       : 'src/images/',
     'srcJade'      : 'src/jade/',
+    'srcSlim'      : 'src/slim/',
     'srcJs'        : 'src/js/',
     'srcJson'      : './src/json/',
     'srcScss'      : 'src/scss/',

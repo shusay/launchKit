@@ -38,8 +38,10 @@ nbproject
 .idea
 .ssh
 .grunt
+.bundle
 node_modules
 bower_components
+vendor
 lib-cov
 lcov.info
 pids

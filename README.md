@@ -12,34 +12,6 @@ Web development environment using
 - browserify
 - bootstrap
 
-
-## Setup
-Edit `src/gulp/config.js`
-Choose css framework at the
-
-```
-'cssBase'      : 'foundation'
-or
-'cssBase'      : 'bootstrap'
-or
-'cssBase'      : false
-```
-
-Enable/Disable installing _s
-
-```
-'_s'           : true
-or
-'_s'           : false
-```
-
-After that, Once you initializing project with css framework and _s
-
-```
-$ npm install; npm run gulp -- init
-```
-
-
 ## How to run gulp tasks
 
 ```
@@ -64,21 +36,6 @@ To call specified task.
 
 ```
 $ npm run gulp -- taskname
-```
-
-
-## foundation
-
-```
-src/scss/core/_settings.scss
-src/scss/core/_foundation.scss
-```
-
-
-## bootstrap
-
-```
-src/scss/core/_bootstrap.scss
 ```
 
 ## browserify

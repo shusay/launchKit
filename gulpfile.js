@@ -5,6 +5,7 @@
 ------------------------------------------------------------------------------*/
 require('./src/gulp/install.js');
 require('./src/gulp/jade.js');
+require('./src/gulp/slim.js');
 require('./src/gulp/bundlejs.js');
 require('./src/gulp/image.js');
 require('./src/gulp/tasks.js');
@@ -58,6 +59,10 @@ gulp.task('sass:node', function() {
 /*------------------------------------------------------------------------------
  * browser-sync
 ------------------------------------------------------------------------------*/
+gulp.task('slim:bs', ['slim'], function() {
+  browserSync.reload();
+  return;
+});
 gulp.task('jade:bs', ['jade'], function() {
   browserSync.reload();
   return;
@@ -88,6 +93,7 @@ gulp.task('browser-sync', function() {
   args.browser = opt.browser;
   browserSync.init(args);
 
+  gulp.watch([paths.srcSlim + '**/*.slim'], { interval: 500 }, ['slim:bs']);
   gulp.watch([paths.srcJade + '**/*.jade'], { interval: 500 }, ['jade:bs']);
   gulp.watch([paths.srcJs   + '**/*.js'], { interval: 500 }, ['js:bs']);
   gulp.watch([paths.srcScss + '**/*.scss'], { interval: 500 }, ['sass:node']);

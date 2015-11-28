@@ -8,6 +8,7 @@ var runSequence   = require('run-sequence');
  * gulp Tasks
 ------------------------------------------------------------------------------*/
 gulp.task('watch', function() {
+  gulp.watch([paths.srcSlim + '**/*.slim'], { interval: 500 }, ['slim']);
   gulp.watch([paths.srcJade + '**/*.jade'], { interval: 500 }, ['jade']);
   gulp.watch([paths.srcJs   + '**/*.js'], { interval: 500 }, ['js:watchify']);
   gulp.watch([paths.srcScss + '**/*.scss'], { interval: 500 }, ['sass:node']);

@@ -12,6 +12,11 @@ Web development environment using
 - browserify
 - bootstrap
 
+## Setup
+```
+$ npm install; npm run gulp -- init
+```
+
 ## How to run gulp tasks
 
 ```

@@ -30,6 +30,7 @@ $scroll-bar       : 20px;
 @include mq-pc {
 
   .l-grid-container, .l-grid-footer {
+    position: relative;
     width: $pc;
   }
 

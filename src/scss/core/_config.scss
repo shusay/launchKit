@@ -16,7 +16,11 @@ $imgPath          : "shared/images/";
 
 @import 'inc/webfonts';
 
+// ヒラギノ
 $fonts: "Open Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+
+// 游ゴシック
+//$fonts: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
 
 // --- sizes --- // Note. Inspired from cloth sizing.
 $xl3              : 48px;

@@ -3,6 +3,7 @@
 - node.js >=0.12.0
 - npm
 - bower
+- slim
 
 
 ## LaunchKit

@@ -17,6 +17,11 @@ $scroll-bar       : 20px;
   }
 }
 
+@mixin retina {
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    @content;
+  }
+}
 
 .grid-s-1, .grid-s-2, .grid-s-3, .grid-s-4, .grid-s-5, .grid-s-6, .grid-s-7, .grid-s-8, .grid-s-9, .grid-s-10, .grid-s-11, .grid-s-12,
 .grid-m-1, .grid-m-2, .grid-m-3, .grid-m-4, .grid-m-5, .grid-m-6, .grid-m-7, .grid-m-8, .grid-m-9, .grid-m-10, .grid-m-11, .grid-m-12,
@@ -67,4 +72,40 @@ $scroll-bar       : 20px;
   .l-grid-container, .l-grid-footer {
     padding: 0 16px;
   }
+}
+
+.grid-1_1 {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+}
+
+.grid-1_2 {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 50%;
+  }
+}
+
+.grid-4_3 {
+  &:before {
+    padding-top: 25%;
+  }
+}
+
+.grid-16_9 {
+  &:before {
+    padding-top: 56.25%;
+  }
+}
+
+.grid-inner {
+  position: absolute;
+  height: 100%; width: 100%;
+  top: 0; left: 0; bottom: 0; right: 0;
 }

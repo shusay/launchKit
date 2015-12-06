@@ -112,3 +112,12 @@ table {
   border-spacing: 0;
   border-collapse: collapse;
 }
+
+/* =========================================================
+   Form
+========================================================= */
+input, select {
+  -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}

@@ -9,7 +9,7 @@ var runSequence   = require('run-sequence');
 ------------------------------------------------------------------------------*/
 gulp.task('watch', function() {
   gulp.watch([paths.srcSlim + '**/*.slim'], { interval: 500 }, ['slim']);
-  gulp.watch([paths.srcJade + '**/*.jade'], { interval: 500 }, ['jade']);
+  gulp.watch([paths.srcPug + '**/*.pug'], { interval: 500 }, ['pug']);
   gulp.watch([paths.srcJs   + '**/*.js'], { interval: 500 }, ['js:watchify']);
   gulp.watch([paths.srcScss + '**/*.scss'], { interval: 500 }, ['sass:node']);
   gulp.watch([paths.srcImg  + 'sprite/**/*.png'], { interval: 500 }, ['sprite']);

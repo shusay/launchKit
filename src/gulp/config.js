@@ -23,7 +23,7 @@ module.exports = {
     'srcBower'     : 'bower_components/',
     'srcDir'       : 'src/',
     'srcImg'       : 'src/images/',
-    'srcJade'      : 'src/jade/',
+    'srcPug'      : 'src/pug/',
     'srcSlim'      : 'src/slim/',
     'srcJs'        : 'src/js/',
     'srcJson'      : './src/json/',

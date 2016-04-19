@@ -4,7 +4,7 @@
  * Include modules
 ------------------------------------------------------------------------------*/
 require('./src/gulp/install.js');
-require('./src/gulp/jade.js');
+require('./src/gulp/pug.js');
 require('./src/gulp/slim.js');
 require('./src/gulp/bundlejs.js');
 require('./src/gulp/image.js');
@@ -20,7 +20,7 @@ var nodeSassConf  = require('./src/gulp/config.js').nodeSassConf;
 
 $.autoprefixer    = require('gulp-autoprefixer');
 $.cssGlobbing     = require('gulp-css-globbing');
-$.minifyCss       = require('gulp-minify-css');
+$.minifyCss       = require('gulp-clean-css');
 $.sass            = require('gulp-sass');
 $.sourcemaps      = require('gulp-sourcemaps');
 
@@ -63,7 +63,7 @@ gulp.task('slim:bs', ['slim'], function() {
   browserSync.reload();
   return;
 });
-gulp.task('jade:bs', ['jade'], function() {
+gulp.task('pug:bs', ['pug'], function() {
   browserSync.reload();
   return;
 });
@@ -94,7 +94,7 @@ gulp.task('browser-sync', function() {
   browserSync.init(args);
 
   gulp.watch([paths.srcSlim + '**/*.slim'], { interval: 500 }, ['slim:bs']);
-  gulp.watch([paths.srcJade + '**/*.jade'], { interval: 500 }, ['jade:bs']);
+  gulp.watch([paths.srcPug + '**/*.pug'], { interval: 500 }, ['pug:bs']);
   gulp.watch([paths.srcJs   + '**/*.js'], { interval: 500 }, ['js:bs']);
   gulp.watch([paths.srcScss + '**/*.scss'], { interval: 500 }, ['sass:node']);
   gulp.watch([paths.srcImg  + 'sprite/**/*.png'], { interval: 500 }, ['sprite:bs']);

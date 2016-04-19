@@ -22,8 +22,8 @@ $fonts: "Open Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", 
 // 游ゴシック
 //$fonts: "Open Sans", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
 
-// Helvetica
-//$fonts: "Helvetica Neue", Arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+// Helvetica * Vivivit corp's font system.
+$fonts: "Helvetica Neue", Arial, "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 
 // --- sizes --- // Note. Inspired from cloth sizing.
 $xxxl             : 48px;
@@ -83,19 +83,4 @@ $warning          : #ffba49;
 
 
 // --- Modal Background --- //
-$mdlbg            : rgba(0,0,0,.65); // Note: Modal background color
-
-
-/* ================================================= *
-   Margin, Spacing Note. Inspired from cup sizing
-** ================================================= */
-
-$a                : 8px;
-$b                : 12px;
-$c                : 16px;
-$d                : 20px;
-$e                : 24px;
-$f                : 32px;
-$g                : 40px;
-$h                : 48px;
-$i                : 56px;
+$mdlbg            : rgba(0,0,0,.85); // Note: Modal background color

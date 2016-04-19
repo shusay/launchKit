@@ -65,7 +65,7 @@ Basically source file placed in "src/". It passed to "shared/" as destination th
 │   │   ├── functions.js
 │   │   ├── image.js
 │   │   ├── install.js
-│   │   ├── jade.js
+│   │   ├── pug.js
 │   │   └── tasks.js
 │   ├── images
 │   │   ├── sprite
@@ -78,18 +78,18 @@ Basically source file placed in "src/". It passed to "shared/" as destination th
 │   │       │   └── dummy.svg
 │   │       └── sp
 │   │           └── dummy.svg
-│   ├── jade
+│   ├── pug
 │   │   ├── inc
 │   │   │   ├── core
-│   │   │   │   ├── _base.jade
-│   │   │   │   ├── _config.jade
-│   │   │   │   └── _mixin.jade
+│   │   │   │   ├── _base.pug
+│   │   │   │   ├── _config.pug
+│   │   │   │   └── _mixin.pug
 │   │   │   ├── layout
-│   │   │   │   ├── _l-footer.jade
-│   │   │   │   └── _l-header.jade
+│   │   │   │   ├── _l-footer.pug
+│   │   │   │   └── _l-header.pug
 │   │   │   └── module
-│   │   │       └── _m-button.jade
-│   │   └── index.jade
+│   │   │       └── _m-button.pug
+│   │   └── index.pug
 │   ├── js
 │   │   ├── pc
 │   │   │   ├── app

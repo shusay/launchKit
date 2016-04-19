@@ -26,8 +26,8 @@ $fonts: "Open Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", 
 //$fonts: "Helvetica Neue", Arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 
 // --- sizes --- // Note. Inspired from cloth sizing.
-$xl3              : 48px;
-$xl2              : 40px;
+$xxxl             : 48px;
+$xxl              : 40px;
 $xl               : 32px;
 $l                : 26px;
 $m                : 20px;
@@ -35,7 +35,7 @@ $s                : 15px;
 $xs               : 12px;
 
 // --- Mobile Font Size -- //
-$xl2-m            : 40px;
+$xxl-m            : 40px;
 $xl-m             : 32px;
 $l-m              : 24px;
 $m-m              : 18px;
@@ -47,13 +47,13 @@ $xs-m             : 12px;
    Colors
 ** ================================================= */
 
-// --- Blue --- //
-$bl12             : #24a6c7;
-$bl10             : #27b7db; // Primary
-$bl8              : #49c4e3;
-$bl6              : #6fd4ed;
-$bl4              : #8cdaed;
-$bl2              : #b3e8f5;
+// --- primary --- //
+$pr12             : #24a6c7;
+$pr10             : #27b7db; // Primary
+$pr8              : #49c4e3;
+$pr6              : #6fd4ed;
+$pr4              : #8cdaed;
+$pr2              : #b3e8f5;
 
 // --- Black --- //
 $b12              : #071013; // Headline

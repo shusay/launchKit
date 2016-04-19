@@ -30,18 +30,18 @@ iframe {
    Text-level semantics
 ========================================================= */
 a {
-  color: $bl10;
+  color: $pr10;
   transition: color 0.1s ease;
   text-decoration: none;
   &:link,
   &:visited {
-    color: $bl10;
+    color: $pr10;
   }
   &:hover,
   &:active,
   &:focus {
     outline: 0;
-    color: $bl12;
+    color: $pr12;
   }
 }
 

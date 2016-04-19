@@ -1,4 +1,47 @@
 @charset 'utf-8';
+
+@mixin mq-l {
+  @media (min-width: $device-l) {
+    @content;
+  }
+}
+
+@mixin mq-m {
+  @media (min-width: $device-m) and (max-width: ($device-l - 1)) {
+    @content;
+  }
+}
+
+@mixin mq-s {
+  @media (min-width: $device-s) and (max-width: ($device-m - 1)) {
+    @content;
+  }
+}
+
+@mixin mq-xs {
+  @media (max-width: ($device-s - 1)) {
+    @content;
+  }
+}
+
+@mixin mq-exclude-sp {
+  @media (min-width: $device-s) {
+    @content;
+  }
+}
+
+@mixin mq-middle-tablet {
+  @media (min-width: $device-xs) and (max-width: ($device-s)) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    @content;
+  }
+}
+
 @mixin clearfix() {
   & {
     *zoom: 1;

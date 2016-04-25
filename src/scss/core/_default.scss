@@ -1,4 +1,8 @@
 @charset "utf-8";
+* {
+  box-sizing: border-box;
+}
+
 /* =========================================================
    The root elemen
 ========================================================= */
@@ -6,6 +10,7 @@ html {
   font-size: $s;
   min-height: 100%;
 }
+
 body {
   background-color: #fff;
   background-repeat: no-repeat;
